@@ -6,6 +6,5 @@
 ## Contributors
 - [hujaepaKeje2023](https://github.com/hujaepaKeje2023)
 - [rarehusayn](https://github.com/rarehusayn)
-- [yewshanooi](https://github.com/yewshanooi)
 - [prolexicgt](https://github.com/prolexicgt)
 - [SeifRSeif](https://github.com/SeifRSeif)
