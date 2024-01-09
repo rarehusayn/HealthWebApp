@@ -1,0 +1,68 @@
+html, body {
+    display: flex;
+    flex-direction: row;  
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: #0000ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#robo-body {
+    position: absolute;
+    top: 0;
+    padding-right: 8em;
+    height: 110%;
+    width: 110%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding-left: 8em;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.enter {
+    border: 2px solid;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.enter:hover {
+    color: #cdcdcd;
+}
+
+.text {
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #0000ff;
+}
+
+@media only screen and (max-width : 400px) {
+    .text {
+        padding-left: 40px;
+        font-size: 12px;
+    }
+}
