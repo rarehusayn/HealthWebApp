@@ -1,3 +1,7 @@
+/*
+IGNORE THIS FILE FOR NOW
+*/
+
 /* This file contains the keys and links for ApiMedic and Google Translate APIs
 In index.html, replace <script src="scripts/api.js" charset="utf-8"></script> 
 with the following: <script src="scripts/apikey.js" charset="utf-8"></script>

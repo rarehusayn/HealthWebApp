@@ -1,3 +1,6 @@
+/*
+THIS FILE SCRIPT IS WHERE ALL THE BODY PARTS LABEL BEING STORED IN
+*/
 var translations = {
     english : {
         "wiki": {
