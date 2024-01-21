@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/selectBody.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/favicon.ico">
     <title>BioLingual</title>
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
+
 <body ontouchstart="" onmouseover="">
-    <div class="main">
-         <div class="main-panel" data-target="main-panel">
-            <object type="image/svg+xml" id="body-boxes" alt="vector graphic color overlays"></object> 
+    <div class="menu">
+        <div class="dropdown">
+            <select class="form-control form-control-lg bodySelect" id="bodyPart" style="width: 150px;">
+                <option value="Head">Head</option>
+                <option value="Upper Face/Face">Upper Face/Face</option>
+                <option value="Ear, Nose, Throat">Ear, Nose, Throat</option>
+                <option value="Mouth">Mouth</option>
+                <option value="Chest">Chest</option>
+                <option value="Arm">Arm</option>
+                <option value="Hand">Hand</option>
+                <option value="Abdomen">Abdomen</option>
+                <option value="Groin">Groin</option>
+                <option value="Leg">Leg</option>
+                <option value="Foot">Foot</option>
+            </select>
         </div>
-    </main> 
-    <!-- <script src="scripts/api.js" charset="utf-8"></script> -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-      <script src="scripts/dictionary.js" charset="utf-8"></script>
-     <script src="scripts/demo.js" charset="utf-8"></script>  
+    </div>
+    <div class="body-display">
+        <div class="main">
+            <div class="main-panel" data-target="main-panel">
+                <object type="image/svg+xml" id="body-boxes" alt="vector graphic color overlays"></object>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="scripts/dictionary.js" charset="utf-8"></script>
+            <script src="scripts/demo.js" charset="utf-8"></script>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#bodyPart').select2();
+    });
+</script>
+
 </html>
